@@ -1,4 +1,6 @@
 package com.sportclubai.core.navigation
+import androidx.navigation.NavType
+import androidx.navigation.navArgument
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
