@@ -86,7 +86,12 @@ fun BackupCard(backup: BackupMetadata, onRestore: () -> Unit) {
             Text("Size: ${backup.sizeBytes / 1024} KB", style = MaterialTheme.typography.bodySmall)
             
             Spacer(modifier = Modifier.height(8.dp))
-            Button(onClick = onRestore, modifier = Modifier.fillMaxWidth(), variant = ButtonDefaults.outlinedButtonColors()) {
+            
+            // اصلاح اینجا انجام شد:
+            OutlinedButton(
+                onClick = onRestore,
+                modifier = Modifier.fillMaxWidth()
+            ) {
                 Text("Restore Backup")
             }
         }
