@@ -81,7 +81,7 @@ class NotificationRepositoryImpl @Inject constructor(
         batch.commit().await()
     }
 
-    override fun getScheduledNotifications(clubId: String): Flow<List<Notification>> = callbackFlow {
+    override suspend fun getScheduledNotifications(clubId: String): Flow<List<Notification>> = callbackFlow {
         val collection = firestore.collection("clubs").document(clubId).collection("notifications")
             .whereEqualTo("status", "SCHEDULED")
         
