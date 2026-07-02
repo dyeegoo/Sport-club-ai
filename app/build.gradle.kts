@@ -1,9 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
-    id("com.google.dagger.hilt.android")
-    id("com.google.gms.google-services")
+    // id("com.google.gms.google-services")  <-- این خط را کامنت کنید
+    // اگر خطی مربوط به apply plugin هم دیدید، آن را هم کامنت کنید
 }
 android {
     namespace = "com.sportclubai"
