@@ -1,0 +1,10 @@
+SportClub AI is the ultimate management solution for sports clubs, martial arts academies, and fitness centers. 
+
+Key Features:
+- Student Management: Track profiles, belts, and progress.
+- Attendance & Check-ins: Quick QR code check-ins and session tracking.
+- Billing & Payments: Manage subscriptions, track invoices, and process payments securely.
+- AI-Powered Insights: Generate custom training plans and get analytics on club performance.
+- Messaging & Notifications: Keep your students and coaches updated with real-time alerts.
+
+Streamline your club operations today with SportClub AI!

@@ -1,0 +1,6 @@
+{
+  "name": "SportClub AI Architecture",
+  "description": "Software architecture document and specifications for the SportClub AI Android application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
