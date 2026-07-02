@@ -68,18 +68,16 @@ fun SubscriptionDashboardScreen(
                             usage = state.usage
                         )
 
-                        Button(
+                        OutlinedButton(
                             onClick = { navController.navigate("billing_history") },
-                            modifier = Modifier.fillMaxWidth(),
-                            variant = ButtonDefaults.outlinedButtonColors()
+                            modifier = Modifier.fillMaxWidth()
                         ) {
                             Text("View Billing History")
                         }
 
-                        Button(
+                        OutlinedButton(
                             onClick = { navController.navigate("white_label_settings") },
-                            modifier = Modifier.fillMaxWidth(),
-                            variant = ButtonDefaults.outlinedButtonColors()
+                            modifier = Modifier.fillMaxWidth()
                         ) {
                             Text("White Label Settings")
                         }
@@ -100,7 +98,6 @@ fun SubscriptionCard(subscription: Subscription, onUpgradeClick: () -> Unit) {
             Spacer(modifier = Modifier.height(8.dp))
             if (subscription.isTrial) {
                 Text("Status: Active (Trial)", style = MaterialTheme.typography.bodyMedium)
-                // In a real app, calculate days remaining based on trialEndDate
                 Text("Trial expires soon", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
             } else {
                 Text(if (subscription.isActive) "Status: Active" else "Status: Inactive", style = MaterialTheme.typography.bodyMedium)
@@ -139,7 +136,7 @@ fun UsageProgressRow(label: String, current: Int, max: Int) {
         }
         val progress = if (max > 0) (current.toFloat() / max.toFloat()).coerceIn(0f, 1f) else 0f
         LinearProgressIndicator(
-            progress = progress,
+            progress = { progress },
             modifier = Modifier.fillMaxWidth().height(8.dp),
             color = if (progress >= 1f) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary
         )
