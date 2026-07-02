@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt") // این خط را اضافه کنید
-    // id("com.google.gms.google-services") // این که قبلا کامنت شده بود
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android") // این خط را اضافه کنید
 }
 android {
     namespace = "com.sportclubai"
