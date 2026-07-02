@@ -1,3 +1,4 @@
+import androidx.compose.ui.text.font.FontWeight
 package com.sportclubai.presentation.messages
 
 import androidx.compose.foundation.background
