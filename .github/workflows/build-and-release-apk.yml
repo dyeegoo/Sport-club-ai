@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  ANDROID_SDK_ROOT: ${{ runner.temp }}/android-sdk
+  ANDROID_SDK_ROOT: ${{ github.workspace }}/android-sdk
   RELEASE_TAG: auto-apk-${{ github.run_id }}
 
 jobs:
