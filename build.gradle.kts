@@ -1,7 +1,5 @@
 buildscript {
-    ext {
-        set("compose_ui_version", "1.6.0")
-    }
+    extra.set("compose_ui_version", "1.6.0")
 }
 plugins {
     id("com.android.application") version "8.2.1" apply false
