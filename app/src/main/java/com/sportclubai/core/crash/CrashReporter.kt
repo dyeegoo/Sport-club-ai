@@ -3,6 +3,8 @@ package com.sportclubai.core.crash
 import android.util.Log
 import javax.inject.Inject
 import javax.inject.Singleton
+import androidx.navigation.navArgument
+import androidx.navigation.NavType
 
 @Singleton
 class CrashReporter @Inject constructor() {
